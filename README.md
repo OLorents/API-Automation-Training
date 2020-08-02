@@ -76,9 +76,9 @@ You must know and understand following tools that you will need to use in API te
 
 **Go to Startup.cs, set valid DB and credentials in lines 24 and 25**
 
-    services.AddDbContext<ProductsDbContext>(option => option.UseSqlServer(@"Data Source = **{DB}; uid={uid}; pwd={pwd}**; Initial Catalog = ProductsDb;"));
+    services.AddDbContext<ProductsDbContext>(option => option.UseSqlServer(@"Data Source = {DB}; uid={uid}; pwd={pwd}; Initial Catalog = ProductsDb;"));
   
-    services.AddDbContext<CompanyDbContext>(option => option.UseSqlServer(@"Data Source = **{DB}; uid={uid}; pwd={pwd}**; Initial Catalog = CompaniesDb;"));
+    services.AddDbContext<CompanyDbContext>(option => option.UseSqlServer(@"Data Source = {DB}; uid={uid}; pwd={pwd}; Initial Catalog = CompaniesDb;"));
 
 - Build project and start it. 
 
